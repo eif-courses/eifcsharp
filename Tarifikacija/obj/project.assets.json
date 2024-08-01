@@ -1797,6 +1797,19 @@
           }
         }
       },
+      "Ulid/1.3.4": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Ulid.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Ulid.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "YamlDotNet/15.1.4": {
         "type": "package",
         "compile": {
@@ -5574,6 +5587,28 @@
         "system.threading.tasks.nuspec"
       ]
     },
+    "Ulid/1.3.4": {
+      "sha512": "6IaGquwjjfW+BoHSV844y12Uy2kxbboYNmsibxr2lotcSPAA3LKy1CKcAQ8JOdAdL4xMoDNXA1oxG41w7fbr6Q==",
+      "type": "package",
+      "path": "ulid/1.3.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/Ulid.dll",
+        "lib/net6.0/Ulid.xml",
+        "lib/net7.0/Ulid.dll",
+        "lib/net7.0/Ulid.xml",
+        "lib/net8.0/Ulid.dll",
+        "lib/net8.0/Ulid.xml",
+        "lib/netstandard2.0/Ulid.dll",
+        "lib/netstandard2.0/Ulid.xml",
+        "lib/netstandard2.1/Ulid.dll",
+        "lib/netstandard2.1/Ulid.xml",
+        "ulid.1.3.4.nupkg.sha512",
+        "ulid.nuspec"
+      ]
+    },
     "YamlDotNet/15.1.4": {
       "sha512": "IjWucOgVbhm72da0Ck3KcyvMuKT/TfilHcvtwvhLLnkn2zr5st8BkH3lDoY5lkMH9Z3jsJeLDrnBS4GpAViUqg==",
       "type": "package",
@@ -5608,7 +5643,8 @@
       "FluentValidation >= 11.9.2",
       "FluentValidation.AspNetCore >= 11.3.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.6",
-      "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.6"
+      "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.6",
+      "Ulid >= 1.3.4"
     ]
   },
   "packageFolders": {
@@ -5687,6 +5723,10 @@
           "Microsoft.EntityFrameworkCore.Sqlite": {
             "target": "Package",
             "version": "[8.0.6, )"
+          },
+          "Ulid": {
+            "target": "Package",
+            "version": "[1.3.4, )"
           }
         },
         "imports": [

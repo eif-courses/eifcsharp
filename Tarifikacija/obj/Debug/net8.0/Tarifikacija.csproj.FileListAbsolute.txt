@@ -143,3 +143,4 @@ C:\Users\Marius\RiderProjects\Eif\Tarifikacija\obj\Debug\net8.0\refint\Tarifikac
 C:\Users\Marius\RiderProjects\Eif\Tarifikacija\obj\Debug\net8.0\Tarifikacija.pdb
 C:\Users\Marius\RiderProjects\Eif\Tarifikacija\obj\Debug\net8.0\Tarifikacija.genruntimeconfig.cache
 C:\Users\Marius\RiderProjects\Eif\Tarifikacija\obj\Debug\net8.0\ref\Tarifikacija.dll
+C:\Users\Marius\RiderProjects\Eif\Tarifikacija\bin\Debug\net8.0\Ulid.dll

@@ -12,10 +12,20 @@ public class AppDbContext : DbContext
 
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
     {
-        _dbPath = Path.Join(Environment.GetFolderPath(Folder), "eif.db");
+        _dbPath = Path.Join(Environment.GetFolderPath(Folder), "eifkita.db");
         Console.Write(_dbPath);
     }
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<BaseEntity>()
+            .Property(e => e.Id)
+            .HasConversion(
+                v => v.ToString(),
+                v => Ulid.Parse(v.ToString()));
+    }
+    
+    
     protected override void OnConfiguring(DbContextOptionsBuilder options)
     {
         if (!options.IsConfigured)
